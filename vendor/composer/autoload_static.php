@@ -4,31 +4,43 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
+class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Symfony\\Polyfill\\Util\\' => 22,
             'Symfony\\Polyfill\\Php73\\' => 23,
+            'Symfony\\Polyfill\\Php56\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Component\\Console\\' => 26,
+            'SuperClosure\\' => 13,
         ),
         'P' => 
         array (
+            'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'PhpParser\\' => 10,
+            'PhpDocReader\\' => 13,
             'PackageVersions\\' => 16,
         ),
         'N' => 
         array (
             'Nyholm\\Psr7\\' => 12,
             'Nyholm\\Psr7Server\\' => 18,
+        ),
+        'I' => 
+        array (
+            'Invoker\\' => 8,
         ),
         'H' => 
         array (
@@ -39,6 +51,7 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
             'Doctrine\\Persistence\\' => 21,
             'Doctrine\\ORM\\' => 13,
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Inflector\\' => 19,
             'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
@@ -46,6 +59,7 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
+            'DI\\' => 3,
         ),
         'A' => 
         array (
@@ -54,9 +68,17 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Util\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-util',
+        ),
         'Symfony\\Polyfill\\Php73\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
+        ),
+        'Symfony\\Polyfill\\Php56\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php56',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -70,6 +92,14 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'SuperClosure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeremeamia/superclosure/src',
+        ),
+        'Psr\\Http\\Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
@@ -78,6 +108,14 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'PhpDocReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
         ),
         'PackageVersions\\' => 
         array (
@@ -90,6 +128,10 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
         'Nyholm\\Psr7Server\\' => 
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7-server/src',
+        ),
+        'Invoker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/invoker/src',
         ),
         'Http\\Message\\' => 
         array (
@@ -106,6 +148,10 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
         'Doctrine\\DBAL\\' => 
         array (
@@ -138,6 +184,10 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
             3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
         ),
+        'DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/php-di/src',
+        ),
         'Alura\\Cursos\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -151,9 +201,9 @@ class ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb1d68ae402a7ab1de47a33c21930733c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit81f6e84777c177afd04a9f4850670b81::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit81f6e84777c177afd04a9f4850670b81::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit81f6e84777c177afd04a9f4850670b81::$classMap;
 
         }, null, ClassLoader::class);
     }
