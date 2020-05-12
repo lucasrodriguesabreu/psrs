@@ -4,11 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
+class ComposerStaticInit35f935833bfc0943d64e6f70fe5c86a5
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
     );
@@ -17,10 +16,9 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         'S' => 
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
-            'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Php56\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Console\\' => 26,
             'SuperClosure\\' => 13,
         ),
@@ -31,7 +29,6 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
-            'PackageVersions\\' => 16,
         ),
         'N' => 
         array (
@@ -48,12 +45,9 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         ),
         'D' => 
         array (
-            'Doctrine\\Persistence\\' => 21,
             'Doctrine\\ORM\\' => 13,
             'Doctrine\\Instantiator\\' => 22,
-            'Doctrine\\Inflector\\' => 19,
             'Doctrine\\DBAL\\' => 14,
-            'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
@@ -72,10 +66,6 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-util',
         ),
-        'Symfony\\Polyfill\\Php73\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
-        ),
         'Symfony\\Polyfill\\Php56\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php56',
@@ -84,9 +74,9 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/service-contracts',
+            0 => __DIR__ . '/..' . '/symfony/contracts',
         ),
         'Symfony\\Component\\Console\\' => 
         array (
@@ -94,7 +84,7 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         ),
         'SuperClosure\\' => 
         array (
-            0 => __DIR__ . '/..' . '/jeremeamia/superclosure/src',
+            0 => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src',
         ),
         'Psr\\Http\\Server\\' => 
         array (
@@ -102,8 +92,8 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -116,10 +106,6 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         'PhpDocReader\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
-        ),
-        'PackageVersions\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
         ),
         'Nyholm\\Psr7\\' => 
         array (
@@ -137,10 +123,6 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         array (
             0 => __DIR__ . '/..' . '/php-http/message-factory/src',
         ),
-        'Doctrine\\Persistence\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence',
-        ),
         'Doctrine\\ORM\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/orm/lib/Doctrine/ORM',
@@ -149,17 +131,9 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
-        'Doctrine\\Inflector\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
-        ),
         'Doctrine\\DBAL\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/lib/Doctrine/DBAL',
-        ),
-        'Doctrine\\Common\\Lexer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
@@ -179,10 +153,10 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
-            1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
-            3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
+            3 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'DI\\' => 
         array (
@@ -194,16 +168,22 @@ class ComposerStaticInit81f6e84777c177afd04a9f4850670b81
         ),
     );
 
-    public static $classMap = array (
-        'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit81f6e84777c177afd04a9f4850670b81::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit81f6e84777c177afd04a9f4850670b81::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit81f6e84777c177afd04a9f4850670b81::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit35f935833bfc0943d64e6f70fe5c86a5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit35f935833bfc0943d64e6f70fe5c86a5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit35f935833bfc0943d64e6f70fe5c86a5::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

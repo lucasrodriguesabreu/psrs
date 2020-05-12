@@ -16,7 +16,6 @@ use DI\Definition\Source\DefinitionArray;
 use DI\Definition\Source\MutableDefinitionSource;
 use DI\Definition\Source\ReflectionBasedAutowiring;
 use DI\Definition\Source\SourceChain;
-use DI\Definition\ValueDefinition;
 use DI\Invoker\DefinitionParameterResolver;
 use DI\Proxy\ProxyFactory;
 use InvalidArgumentException;
@@ -240,14 +239,7 @@ class Container implements ContainerInterface, FactoryInterface, InvokerInterfac
             return $instance;
         }
 
-        $className = get_class($instance);
-
-        // If the class is anonymous, don't cache its definition
-        // Checking for anonymous classes is cleaner via Reflection, but also slower
-        $objectDefinition = false !== strpos($className, '@anonymous')
-            ? $this->definitionSource->getDefinition($className)
-            : $this->getDefinition($className);
-
+        $objectDefinition = $this->definitionSource->getDefinition(get_class($instance));
         if (! $objectDefinition instanceof ObjectDefinition) {
             return $instance;
         }
@@ -290,9 +282,7 @@ class Container implements ContainerInterface, FactoryInterface, InvokerInterfac
             $value = new FactoryDefinition($name, $value);
         }
 
-        if ($value instanceof ValueDefinition) {
-            $this->resolvedEntries[$name] = $value->getValue();
-        } elseif ($value instanceof Definition) {
+        if ($value instanceof Definition) {
             $value->setName($name);
             $this->setDefinition($name, $value);
         } else {
